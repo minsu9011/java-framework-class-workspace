@@ -9,8 +9,8 @@ import org.junit.Test;
 import java.sql.SQLException;
 
 public class UserDaoTest {
-    private JejuUserDao userDao;
-    private HallaUserDao hallaUserDao;
+    private UserDao userDao;
+    private UserDao hallaUserDao;
     private int id;
     private String name;
     private String password;
