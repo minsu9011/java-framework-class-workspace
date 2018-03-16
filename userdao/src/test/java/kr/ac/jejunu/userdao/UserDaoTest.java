@@ -19,8 +19,8 @@ public class UserDaoTest {
 
     @Before
     public void setup() {
-        this.userDao = new JejuUserDao();
-        this.hallaUserDao = new HallaUserDao();
+        this.userDao = new UserDao(new JejuConnectionMaker());
+        this.hallaUserDao = new UserDao(new HallaConnectionMaker());
         this.id = 1;
         this.name = "허윤호";
         this.password = "1234";
